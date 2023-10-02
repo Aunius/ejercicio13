@@ -1,0 +1,21 @@
+body{
+    display: grid;
+    place-items: center;
+}
+
+.boton{
+    height: 5rem;
+    width: 5rem;
+}
+
+#icono{
+    color: lightpink; 
+    height: 3rem; 
+    width: 3rem;
+}
+
+.listaGrande{
+    font-size: 5rem;
+    color: chartreuse;
+    font-family: monospace;
+}

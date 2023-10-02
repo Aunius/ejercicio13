@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <script src="fontawesome-free-6.4.2-web/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="http://"id="link">Soy un link</a>
+        <a href="http://"id="link">Soy un link</a>
+        <a href="http://"id="link">Soy un link</a>
+        <a href="http://"id="link">Soy un link</a>
+        <a href="http://"id="link">Soy un link</a>
+    </nav>
+
+    <button type="button" class="boton" id="ocultar"><i class="fa-solid fa-ghost fa-xl" id="icono"></i></button>
+    <button type="button" class="boton" id="mostrar"><i class="fa-solid fa-wand-sparkles fa-xl" id="icono"></i></button>
+
+
+    <div>
+        Hola soy un div!
+    </div>
+    <button type="button" class="boton" id="cambiar"><i class="fa-solid fa-wand-sparkles fa-xl" id="icono"></i></button>
+    
+    <ul>
+        <li>lista desordenada</li>
+        <li>lista desordenada</li>
+        <li>lista desordenada</li>
+        <li>lista desordenada</li>
+    </ul>
+
+    <button type="button" class="boton" id="addclass"><i class="fa-solid fa-wand-sparkles fa-xl" id="icono"></i></button>
+    <button type="button" class="boton" id="toggle"><i class="fa-solid fa-ghost fa-xl" id="icono"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <script>
+        $("#mostrar").click(function () {
+        $("nav").show(2000);
+       });
+
+        $("#ocultar").click(function () {
+        $("nav").hide(2000);
+       });
+
+       $("#cambiar").click(function () {
+        $("div").html("Cambie de texto!")
+       });
+
+       $("#addclass").click(function () {
+        $("li").addClass("listaGrande");
+       });
+
+       $("#toggle").on("click",function () {
+        $("ul").toggle("slow");
+       });
+    </script>
+</body>
+</html>
